@@ -1,10 +1,10 @@
-export default function * Map<Type, Mapped>(
-    iterable: Iterable<Type>,
-    mapper : (value: Type) => Mapped
-) : Iterable<Mapped> {
+import MapParameters from "./map-parameters";
+import MapParameter from "./map-parameter";
 
-    for(const value of iterable) {
+namespace Map {
 
-        yield mapper(value);
-    }
+    export const Parameters = MapParameters
+    export const Parameter = MapParameter
 }
+
+export default Map;

@@ -1,1 +1,7 @@
-export default function Find<Type extends any, Default extends Type | null>(iterable: Iterable<Type>, validation: (block: Type) => boolean, defaults: Default): Type | Default;
+import FindParameters from "./find-parameters";
+import FindParameter from "./find-parameter";
+declare namespace Find {
+    const Parameters: typeof FindParameters;
+    const Parameter: typeof FindParameter;
+}
+export default Find;

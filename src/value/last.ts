@@ -1,18 +1,10 @@
+import LastParameters from "./last-parameters";
+import LastParameter from "./last-parameter";
 
-export default function Last<
-    Type extends any,
-    Default extends Type|null
->(
-    iterable : Iterable<Type>,
-    defaults : Default
-) : Type|Default {
+namespace Last {
 
-    let result : Type|Default = defaults;
-
-    for (const value of iterable) {
-
-        result = value;
-    }
-
-    return result;
+    export const Parameters = LastParameters
+    export const Parameter = LastParameter
 }
+
+export default Last;

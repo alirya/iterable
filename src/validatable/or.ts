@@ -1,16 +1,10 @@
-import Compound from "./compound";
-import FunctionOr from "./boolean/or";
-import Validatable from "@dikac/t-validatable/validatable";
+import OrParameters from "./or-parameters";
+import OrParameter from "./or-parameter";
 
-/**
- * Or operator for {@link Validatable}
- */
-export default class Or<
-    Arguments extends Iterable<Validatable>
-> extends Compound<Arguments> {
+namespace Or {
 
-    get valid() : boolean {
-
-        return  FunctionOr(this.subjects, this.defaults);
-    }
+    export const Parameters = OrParameters
+    export const Parameter = OrParameter
 }
+
+export default Or;

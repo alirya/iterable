@@ -1,13 +1,10 @@
-export default function * Filter<Type extends any = any>(
-    iterable: Iterable<Type>,
-    validation : (value: Type) => boolean
-) : Iterable<Type> {
+import FilterParameters from "./filter-parameters";
+import FilterParameter from "./filter-parameter";
 
-    for(const value of iterable) {
+namespace Filter {
 
-        if(validation(value)) {
-
-            yield value;
-        }
-    }
+    export const Parameters = FilterParameters
+    export const Parameter = FilterParameter
 }
+
+export default Filter;

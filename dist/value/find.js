@@ -1,9 +1,9 @@
-export default function Find(iterable, validation, defaults) {
-    for (const value of iterable) {
-        if (validation(value)) {
-            return value;
-        }
-    }
-    return defaults;
-}
+import FindParameters from "./find-parameters";
+import FindParameter from "./find-parameter";
+var Find;
+(function (Find) {
+    Find.Parameters = FindParameters;
+    Find.Parameter = FindParameter;
+})(Find || (Find = {}));
+export default Find;
 //# sourceMappingURL=find.js.map

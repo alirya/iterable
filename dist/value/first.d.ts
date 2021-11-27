@@ -1,1 +1,7 @@
-export default function First<Type extends any, Default extends Type | null>(iterable: Iterable<Type>, defaults: Default): Type | Default;
+import FirstParameters from "./first-parameters";
+import FirstParameter from "./first-parameter";
+declare namespace First {
+    const Parameters: typeof FirstParameters;
+    const Parameter: typeof FirstParameter;
+}
+export default First;

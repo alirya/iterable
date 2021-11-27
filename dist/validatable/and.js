@@ -1,11 +1,9 @@
-import Compound from "./compound";
-import FunctionAnd from "./boolean/and";
-/**
- * And operator for {@link Validatable}
- */
-export default class And extends Compound {
-    get valid() {
-        return FunctionAnd(this.subjects, this.defaults);
-    }
-}
+import AndParameters from "./and-parameters";
+import AndParameter from "./and-parameter";
+var And;
+(function (And) {
+    And.Parameters = AndParameters;
+    And.Parameter = AndParameter;
+})(And || (And = {}));
+export default And;
 //# sourceMappingURL=and.js.map

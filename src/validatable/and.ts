@@ -1,14 +1,10 @@
-import Compound from "./compound";
-import FunctionAnd from "./boolean/and";
-import Validatable from "@dikac/t-validatable/validatable";
+import AndParameters from "./and-parameters";
+import AndParameter from "./and-parameter";
 
-/**
- * And operator for {@link Validatable}
- */
-export default class And<Arguments extends Iterable<Validatable>> extends Compound<Arguments> {
+namespace And {
 
-    get valid() : boolean {
-
-        return  FunctionAnd(this.subjects, this.defaults);
-    }
+    export const Parameters = AndParameters
+    export const Parameter = AndParameter
 }
+
+export default And;

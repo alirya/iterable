@@ -1,11 +1,10 @@
+import FirstParameters from "./first-parameters";
+import FirstParameter from "./first-parameter";
 
-export default function First<
-    Type extends any,
-    Default extends Type|null
->(
-    iterable : Iterable<Type>,
-    defaults : Default
-) : Type|Default {
+namespace First {
 
-    return iterable[Symbol.iterator]().next().value || defaults;
+    export const Parameters = FirstParameters
+    export const Parameter = FirstParameter
 }
+
+export default First;

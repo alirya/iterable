@@ -1,1 +1,0 @@
-{"version":3,"file":"iterable.js","sourceRoot":"","sources":["../../../src/boolean/string/iterable.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,KAAe,EACf,KAAe;IAGf,IAAI,MAAM,GAAS,KAAM,CAAC,QAAQ,EAAE,CAAC;IAErC,IAAG,KAAK,EAAE;QAEN,OAAO,UAAU,MAAM,gBAAgB,CAAC;KAE3C;SAAM;QAEH,OAAO,UAAU,MAAM,oBAAoB,CAAC;KAC/C;AACL,CAAC"}

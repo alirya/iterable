@@ -1,4 +1,4 @@
-import Or from "../../dist/validatable/or";
+import Or from "../../dist/validatable/or-parameters";
 import Guard from "@dikac/t-validatable/boolean/validatable";
 import Validatable from "@dikac/t-validatable/validatable";
 
@@ -13,14 +13,14 @@ describe('structure', function () {
         let and = new Or<Validatable[]>(subjects, true);
 
         it("constructor", () => {
-            expect(subjects === and.subjects).toBeTrue()
+            expect(subjects === and.iterable).toBeTrue()
         });
 
         it("set", () => {
             let subjects2 = [];
-            and.subjects = subjects2;
-            expect(subjects === and.subjects).toBeFalse()
-            expect(subjects2 === and.subjects).toBeTrue()
+            and.iterable = subjects2;
+            expect(subjects === and.iterable).toBeFalse()
+            expect(subjects2 === and.iterable).toBeTrue()
         });
 
     });
@@ -100,13 +100,13 @@ describe("single", function() {
 
         it("true", () => {
             and.defaults = false;
-            and.subjects = [{valid:true}];
+            and.iterable = [{valid:true}];
             expect(and.valid).toBe(true)
         });
 
         it("false", () => {
             and.defaults = true;
-            and.subjects = [{valid:false}];
+            and.iterable = [{valid:false}];
             expect(and.valid).toBe(false)
         });
 
@@ -120,13 +120,13 @@ describe("multi same", function() {
 
     it("valids", () => {
         and.defaults = false;
-        and.subjects = [{valid:true}, {valid:true}];
+        and.iterable = [{valid:true}, {valid:true}];
         expect(and.valid).toBe(true)
     });
 
     it("invalids", () => {
         and.defaults = true;
-        and.subjects = [{valid:false}, {valid:false}];
+        and.iterable = [{valid:false}, {valid:false}];
         expect(and.valid).toBe(false)
     });
 
@@ -152,13 +152,13 @@ describe("multi mixed", function() {
 
     it("valids", () => {
         and.defaults = true;
-        and.subjects = [{valid:true}, {valid:false}];
+        and.iterable = [{valid:true}, {valid:false}];
         expect(and.valid).toBe(true)
     });
 
     it("invalids", () => {
         and.defaults = false;
-        and.subjects = [{valid:true}, {valid:false}];
+        and.iterable = [{valid:true}, {valid:false}];
         expect(and.valid).toBe(true)
     });
 

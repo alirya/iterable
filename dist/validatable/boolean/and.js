@@ -1,10 +1,9 @@
-export default function And(validatables, defaults = true) {
-    for (let validatable of validatables) {
-        defaults = validatable.valid;
-        if (!defaults) {
-            return false;
-        }
-    }
-    return defaults;
-}
+import AndParameters from "./and-parameters";
+import AndParameter from "./and-parameter";
+var And;
+(function (And) {
+    And.Parameters = AndParameters;
+    And.Parameter = AndParameter;
+})(And || (And = {}));
+export default And;
 //# sourceMappingURL=and.js.map

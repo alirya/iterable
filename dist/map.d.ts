@@ -1,1 +1,7 @@
-export default function Map<Type, Mapped>(iterable: Iterable<Type>, mapper: (value: Type) => Mapped): Iterable<Mapped>;
+import MapParameters from "./map-parameters";
+import MapParameter from "./map-parameter";
+declare namespace Map {
+    const Parameters: typeof MapParameters;
+    const Parameter: typeof MapParameter;
+}
+export default Map;

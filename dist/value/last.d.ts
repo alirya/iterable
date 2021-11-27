@@ -1,1 +1,7 @@
-export default function Last<Type extends any, Default extends Type | null>(iterable: Iterable<Type>, defaults: Default): Type | Default;
+import LastParameters from "./last-parameters";
+import LastParameter from "./last-parameter";
+declare namespace Last {
+    const Parameters: typeof LastParameters;
+    const Parameter: typeof LastParameter;
+}
+export default Last;

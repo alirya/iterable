@@ -1,5 +1,5 @@
 import MemoizedReturnCallback from "../../dist/memoized-return-callback";
-import Find from "../../dist/value/find";
+import Find from "../../dist/value/find-parameters";
 
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});

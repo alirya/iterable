@@ -3,16 +3,16 @@
  */
 export default class Compound {
     /**
-     * {@param subjects} multiple {@link Validatable} to be processed by subclass
+     * {@param iterable} multiple {@link Validatable} to be processed by subclass
      *
-     * {@param defaults} is used if {@param subjects} is empty
+     * {@param defaults} is used if {@param iterable} is empty
      */
-    constructor(subjects, defaults = true) {
-        this.subjects = subjects;
+    constructor(iterable, defaults = true) {
+        this.iterable = iterable;
         this.defaults = defaults;
     }
     [Symbol.iterator]() {
-        return this.subjects[Symbol.iterator]();
+        return this.iterable[Symbol.iterator]();
     }
 }
 //# sourceMappingURL=compound.js.map

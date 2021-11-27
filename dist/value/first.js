@@ -1,4 +1,9 @@
-export default function First(iterable, defaults) {
-    return iterable[Symbol.iterator]().next().value || defaults;
-}
+import FirstParameters from "./first-parameters";
+import FirstParameter from "./first-parameter";
+var First;
+(function (First) {
+    First.Parameters = FirstParameters;
+    First.Parameter = FirstParameter;
+})(First || (First = {}));
+export default First;
 //# sourceMappingURL=first.js.map
