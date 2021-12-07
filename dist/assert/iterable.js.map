@@ -1,1 +1,0 @@
-{"version":3,"file":"iterable.js","sourceRoot":"","sources":["../../src/assert/iterable.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,qBAAqB,CAAC;AACxC,OAAO,SAAS,MAAM,sBAAsB,CAAC;AAE7C,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,KAAe,EACf,QAAiC,SAAS;IAG1C,IAAG,CAAC,KAAK,CAAC,KAAK,CAAC,EAAE;QAEd,MAAM,KAAK,CAAC,KAAK,CAAC,CAAC;KACtB;AACL,CAAC"}

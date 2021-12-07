@@ -1,1 +1,0 @@
-{"version":3,"file":"iterable.js","sourceRoot":"","sources":["../../src/ensure/iterable.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,oBAAoB,CAAC;AACxC,OAAO,SAAS,MAAM,8BAA8B,CAAC;AAErD,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,KAAe,EACf,QAAiC,SAAS;IAG1C,MAAM,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;IACrB,OAAO,KAAK,CAAC;AACjB,CAAC"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"last-parameters.js","sourceRoot":"","sources":["../../src/value/last-parameters.ts"],"names":[],"mappings":"AAuBA,MAAM,CAAC,OAAO,UAAU,cAAc,CAIlC,QAAyB,EACzB,WAA0B,IAAI;IAG9B,IAAI,MAAM,GAAuB,QAAQ,CAAC;IAE1C,KAAK,MAAM,KAAK,IAAI,QAAQ,EAAE;QAE1B,MAAM,GAAG,KAAK,CAAC;KAClB;IAED,OAAO,MAAM,CAAC;AAClB,CAAC"}
