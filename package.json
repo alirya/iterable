@@ -4,9 +4,9 @@
   "description": "Typescript iterable",
   "dependencies": {
     "ts-toolbelt": "^9.6.0",
-    "@dikac/t-validatable": "^0.20.0-beta.6",
+    "@dikac/t-validatable": "^0.20.0-beta.7",
     "@dikac/t-value": "^0.15.0-beta.2",
-    "@dikac/t-boolean": "^0.11.0-beta.4",
+    "@dikac/t-boolean": "^0.11.0-beta.6",
     "@dikac/t-function": "^0.15.0-beta.7"
   },
   "devDependencies": {
