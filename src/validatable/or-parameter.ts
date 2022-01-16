@@ -1,6 +1,6 @@
 import Compound from "./compound";
 import FunctionOr from "./boolean/or-parameters";
-import Validatable from "@dikac/t-validatable/validatable";
+import Validatable from "@alirya/validatable/validatable";
 import OrParameters from "./or-parameters";
 import IterableContainer from "../iterable/iterable";
 

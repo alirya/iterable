@@ -1,6 +1,6 @@
 import IterableContainer from "../iterable/iterable";
-import Value from "@dikac/t-value/value";
-import Validation from "@dikac/t-boolean/validation/validation";
+import Value from "@alirya/value/value";
+import Validation from "@alirya/boolean/validation/validation";
 import FindParameters from "./find-parameters";
 
 export default function FindParameter<

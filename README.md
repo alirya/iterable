@@ -1,2 +1,2 @@
-# t-iterable
+# iterable
 Typescript iterable

@@ -1,5 +1,5 @@
 import Return from "../return/return";
-import Validatable from "@dikac/t-validatable/validatable";
+import Validatable from "@alirya/validatable/validatable";
 import IterableContainer from "../iterable/iterable";
 
 /**

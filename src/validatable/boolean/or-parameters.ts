@@ -1,4 +1,4 @@
-import Validatable from "@dikac/t-validatable/validatable";
+import Validatable from "@alirya/validatable/validatable";
 
 export default function OrParameters<
     Validatables extends Iterable<Validatable>

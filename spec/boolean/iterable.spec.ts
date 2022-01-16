@@ -12,7 +12,7 @@ describe(`compiler compatible`,function() {
 
     } else {
 
-        // @ts-expect-error
+        // @ts-expecerror
         let result : Iterable<any> = argument;
     }
 

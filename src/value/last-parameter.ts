@@ -1,6 +1,6 @@
 import IterableContainer from "../iterable/iterable";
-import Value from "@dikac/t-value/value";
-import LastParameters from "./last-parameters";
+import Value from "@alirya/value/value";
+import LastParameters from "./lasparameters";
 
 export default function LastParameter<
     Type extends any,

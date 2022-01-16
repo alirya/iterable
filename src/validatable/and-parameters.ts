@@ -1,6 +1,6 @@
 import Compound from "./compound";
 import FunctionAnd from "./boolean/and-parameters";
-import Validatable from "@dikac/t-validatable/validatable";
+import Validatable from "@alirya/validatable/validatable";
 
 /**
  * And operator for {@link Validatable}
