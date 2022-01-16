@@ -1,6 +1,6 @@
 import IterableContainer from '../iterable/iterable';
 import Value from '@alirya/value/value';
-import FirstParameters from './firsparameters';
+import FirstParameters from './first-parameters';
 
 export default function FirstParameter<
     Type extends any,
