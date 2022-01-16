@@ -1,5 +1,5 @@
-import Assert from "../assert/iterable";
-import Throwable from "../assert/throwable/iterable";
+import Assert from '../assert/iterable';
+import Throwable from '../assert/throwable/iterable';
 
 export default function Iterable<Enumerate>(
     value : unknown,

@@ -1,6 +1,6 @@
-import Return from "../return/return";
-import Validatable from "@alirya/validatable/validatable";
-import IterableContainer from "../iterable/iterable";
+import Return from '../return/return';
+import Validatable from '@alirya/validatable/validatable';
+import IterableContainer from '../iterable/iterable';
 
 /**
  * base for creating compound wrapper for {@template Validatables}

@@ -1,7 +1,7 @@
-import MemoizedReturnCallback from "../dist/memoized-return-callback";
+import MemoizedReturnCallback from '../dist/memoized-return-callback';
 
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 
@@ -12,18 +12,18 @@ describe('subjects', function () {
 
     let subjects = [
         ()=>{
-            first++
+            first++;
             return 1;
         },
         ()=>{
-            second++
+            second++;
             return 2;
         }
     ];
 
     let callbacks = new MemoizedReturnCallback(subjects);
 
-    it("first call", () => {
+    it('first call', () => {
 
         for(let value of callbacks) {
 
@@ -40,7 +40,7 @@ describe('subjects', function () {
 
     });
 
-    it("second call", () => {
+    it('second call', () => {
 
         for(let value of callbacks) {
 

@@ -8,7 +8,7 @@ export default class MemoizedReturnCallback<Type extends any = any> implements I
          sources : ReadonlyArray<()=>Type> = []
     ) {
 
-        this.sources = [...sources]
+        this.sources = [...sources];
     }
 
     * [Symbol.iterator](): Iterator<Type> {
@@ -19,7 +19,7 @@ export default class MemoizedReturnCallback<Type extends any = any> implements I
 
             const resolve = (this.sources.shift() as ()=>Type)();
             this.returns.push(resolve);
-            yield resolve
+            yield resolve;
         }
     }
 

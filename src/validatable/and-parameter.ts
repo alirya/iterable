@@ -1,8 +1,8 @@
-import Compound from "./compound";
-import FunctionAnd from "./boolean/and-parameters";
-import Validatable from "@alirya/validatable/validatable";
-import IterableContainer from "../iterable/iterable";
-import AndParameters from "./and-parameters";
+import Compound from './compound';
+import FunctionAnd from './boolean/and-parameters';
+import Validatable from '@alirya/validatable/validatable';
+import IterableContainer from '../iterable/iterable';
+import AndParameters from './and-parameters';
 
 /**
  * And operator for {@link Validatable}

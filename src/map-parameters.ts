@@ -1,8 +1,8 @@
-import IterableContainer from "./iterable/iterable";
-import Callback from "@alirya/function/callback/callback";
-import Callable from "@alirya/function/callable";
-import MapParameter from "./map-parameter";
-import Value from "@alirya/value/value";
+import IterableContainer from './iterable/iterable';
+import Callback from '@alirya/function/callback/callback';
+import Callable from '@alirya/function/callable';
+import MapParameter from './map-parameter';
+import Value from '@alirya/value/value';
 
 export default function MapParameters<Type, Mapped>(
     {

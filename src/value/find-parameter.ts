@@ -1,7 +1,7 @@
-import IterableContainer from "../iterable/iterable";
-import Value from "@alirya/value/value";
-import Validation from "@alirya/boolean/validation/validation";
-import FindParameters from "./find-parameters";
+import IterableContainer from '../iterable/iterable';
+import Value from '@alirya/value/value';
+import Validation from '@alirya/boolean/validation/validation';
+import FindParameters from './find-parameters';
 
 export default function FindParameter<
     Type extends any,

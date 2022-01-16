@@ -1,6 +1,6 @@
-import Iterable from "../../dist/object/iterable";
+import Iterable from '../../dist/object/iterable';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 describe('map', function () {
@@ -9,7 +9,7 @@ describe('map', function () {
     let result : Record<string, string> = {};
 
 
-    it("set data", () => {
+    it('set data', () => {
 
         map.set('data', 'data');
         map.set('data1', 'data1');
@@ -18,12 +18,12 @@ describe('map', function () {
     });
 
 
-    it("call", () => {
+    it('call', () => {
 
         result = Iterable(map);
     });
 
-    it("validate", () => {
+    it('validate', () => {
 
         expect(result.data).toBe('data');
         expect(result.data1).toBe('data1');
@@ -39,7 +39,7 @@ describe('array', function () {
     let result : Record<string, string> = {};
 
 
-    it("set data", () => {
+    it('set data', () => {
 
         map.push(['data', 'data']);
         map.push(['data1', 'data1']);
@@ -48,12 +48,12 @@ describe('array', function () {
     });
 
 
-    it("call", () => {
+    it('call', () => {
 
         result = Iterable(map);
     });
 
-    it("validate", () => {
+    it('validate', () => {
 
         expect(result.data).toBe('data');
         expect(result.data1).toBe('data1');

@@ -1,5 +1,5 @@
-import Guard from "../boolean/iterable";
-import Throwable from "./throwable/iterable";
+import Guard from '../boolean/iterable';
+import Throwable from './throwable/iterable';
 
 export default function Iterable<Enumerate>(
     value : unknown,

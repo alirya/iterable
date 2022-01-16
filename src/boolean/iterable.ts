@@ -6,5 +6,5 @@ export default function Iterable<Assumption extends unknown>(value : unknown): v
             return false;
     }
 
-    return typeof (<any>value)[Symbol.iterator] === "function";
+    return typeof (<any>value)[Symbol.iterator] === 'function';
 }

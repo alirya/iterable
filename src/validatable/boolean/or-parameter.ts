@@ -1,6 +1,6 @@
-import Validatable from "@alirya/validatable/validatable";
-import OrParameters from "./or-parameters";
-import IterableContainer from "../../iterable/iterable";
+import Validatable from '@alirya/validatable/validatable';
+import OrParameters from './or-parameters';
+import IterableContainer from '../../iterable/iterable';
 
 export default function OrParameter<
     Validatables extends Iterable<Validatable>

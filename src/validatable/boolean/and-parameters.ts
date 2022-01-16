@@ -1,4 +1,4 @@
-import Validatable from "@alirya/validatable/validatable";
+import Validatable from '@alirya/validatable/validatable';
 
 export default function AndParameters<
     Validatables extends Iterable<Validatable>
