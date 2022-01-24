@@ -2,7 +2,7 @@ import Iterable from '../../dist/boolean/iterable';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe(`compiler compatible`,function() {
+it(`compiler compatible`,function() {
 
     let argument : unknown = [];
 
@@ -12,7 +12,7 @@ describe(`compiler compatible`,function() {
 
     } else {
 
-        // @ts-expecerror
+        // @ts-expect-error
         let result : Iterable<any> = argument;
     }
 
