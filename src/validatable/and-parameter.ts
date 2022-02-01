@@ -1,5 +1,3 @@
-import Compound from './compound';
-import FunctionAnd from './boolean/and-parameters';
 import Validatable from '@alirya/validatable/validatable';
 import IterableContainer from '../iterable/iterable';
 import AndParameters from './and-parameters';
