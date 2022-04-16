@@ -1,13 +1,13 @@
 {
   "name": "@alirya/iterable",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Typescript iterable",
   "dependencies": {
     "ts-toolbelt": "^9.6.0",
-    "@alirya/validatable": "^0.20.0",
-    "@alirya/value": "^0.15.0",
-    "@alirya/boolean": "^0.11.0",
-    "@alirya/function": "^0.15.0"
+    "@alirya/validatable": "^0.20.1",
+    "@alirya/value": "^0.15.1",
+    "@alirya/boolean": "^0.11.1",
+    "@alirya/function": "^0.16.0"
   },
   "homepage": "https://github.com/alirya/iterable",
   "repository": {
