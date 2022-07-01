@@ -1,9 +1,54 @@
 import IterableContainer from '../iterable/iterable';
 import Value from '@alirya/value/value';
 import Validation from '@alirya/boolean/validation/validation';
-import FindParameters from './find-parameters';
 
-export default function FindParameter<
+export function FindParameters<
+    Type extends any,
+    Default extends Type
+>(
+    iterable : Iterable<Type>,
+    validation : (block:Type) => boolean,
+    defaults : Default
+) : Type|Default;
+
+export function FindParameters<
+    Type extends any,
+    Default extends any
+>(
+    iterable : Iterable<Type>,
+    validation : (block:Type) => boolean,
+    defaults : Default
+) : Type|Default;
+
+export function FindParameters<
+    Type extends any,
+>(
+    iterable : Iterable<Type>,
+    validation : (block:Type) => boolean,
+) : Type|null;
+
+export function FindParameters<
+    Type extends any,
+    Default extends Type|null
+>(
+    iterable : Iterable<Type>,
+    validation : (block:Type) => boolean,
+    defaults : Default|null = null
+) : Type|Default|null {
+
+    for (const value of iterable) {
+
+        if(validation(value)) {
+
+            return value;
+        }
+    }
+
+    return defaults;
+}
+
+
+export function FindParameter<
     Type extends any,
     Default extends Type
 >(
@@ -16,7 +61,7 @@ export default function FindParameter<
     }
 ) : Type|Default;
 
-export default function FindParameter<
+export function FindParameter<
     Type extends any,
     Default extends Type
 >(
@@ -29,7 +74,7 @@ export default function FindParameter<
     }
 ) : Type|Default;
 
-export default function FindParameter<
+export function FindParameter<
     Type extends any,
     Default extends any
 >(
@@ -42,7 +87,7 @@ export default function FindParameter<
     }
 ) : Type|Default;
 
-export default function FindParameter<
+export function FindParameter<
     Type extends any,
     Default extends any
 >(
@@ -55,7 +100,7 @@ export default function FindParameter<
     }
 ) : Type|Default;
 
-export default function FindParameter<
+export function FindParameter<
     Type extends any,
 >(
     {
@@ -66,7 +111,7 @@ export default function FindParameter<
 
 ) : Type|null;
 
-export default function FindParameter<
+export function FindParameter<
     Type extends any,
     Default extends Type|null
 >(
@@ -82,3 +127,10 @@ export default function FindParameter<
 
     return FindParameters(value || iterable, validation, defaults);
 }
+
+
+namespace Find {
+    export const Parameters = FindParameters;
+    export const Parameter = FindParameter;
+}
+export default Find;

@@ -1,5 +1,5 @@
 import MemoizedReturnCallback from '../../dist/memoized-return-callback';
-import Last from '../../dist/value/last-parameters';
+import {LastParameters} from '../../dist/value/last';
 
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
@@ -24,14 +24,14 @@ describe('subjects', function () {
 
     it('first call', () => {
 
-        expect(Last(callbacks, 0)).toEqual(2);
+        expect(LastParameters(callbacks, 0)).toEqual(2);
         expect(first).toEqual(1);
         expect(second).toEqual(1);
     });
 
     it('second call', () => {
 
-        expect(Last(callbacks, 0)).toEqual(2);
+        expect(LastParameters(callbacks, 0)).toEqual(2);
         expect(first).toEqual(1);
         expect(second).toEqual(1);
 

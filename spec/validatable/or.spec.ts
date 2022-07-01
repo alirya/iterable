@@ -1,4 +1,4 @@
-import Or from '../../dist/validatable/or-parameters';
+import {OrParameters} from '../../dist/validatable/or';
 import Guard from '@alirya/validatable/boolean/validatable';
 import Validatable from '@alirya/validatable/validatable';
 
@@ -10,7 +10,7 @@ describe('structure', function () {
     describe('subjects', function () {
 
         let subjects = [];
-        let and = new Or<Validatable[]>(subjects, true);
+        let and = new OrParameters<Validatable[]>(subjects, true);
 
         it('constructor', () => {
             expect(subjects === and.iterable).toBeTrue();
@@ -28,7 +28,7 @@ describe('structure', function () {
     describe('initial', function () {
 
         let initial = true;
-        let and = new Or<Validatable[]>([], initial);
+        let and = new OrParameters<Validatable[]>([], initial);
 
         it('constructor', () => {
             expect(initial === and.defaults).toBeTrue();
@@ -50,12 +50,12 @@ describe('empty', function () {
     describe('initial', function () {
 
         it('true', () => {
-            let and = new Or<Validatable[]>([], true);
+            let and = new OrParameters<Validatable[]>([], true);
             expect(and.valid).toBe(true);
         });
 
         it('false', () => {
-            let and = new Or<Validatable[]>([], false);
+            let and = new OrParameters<Validatable[]>([], false);
             expect(and.valid).toBe(false);
         });
 
@@ -63,7 +63,7 @@ describe('empty', function () {
 
     describe('set', function () {
 
-        let and = new Or<Validatable[]>([], true);
+        let and = new OrParameters<Validatable[]>([], true);
 
         it('true', () => {
             and.defaults = true;
@@ -84,19 +84,19 @@ describe('single', function() {
     describe('constructor', function () {
 
         it('true', () => {
-            let and = new Or<Validatable[]>([{valid:true}], false);
+            let and = new OrParameters<Validatable[]>([{valid:true}], false);
             expect(and.valid).toBe(true);
         });
 
         it('false', () => {
-            let and = new Or<Validatable[]>([{valid:false}], true);
+            let and = new OrParameters<Validatable[]>([{valid:false}], true);
             expect(and.valid).toBe(false);
         });
     });
 
     describe('set', function () {
 
-        let and = new Or<Validatable[]>([], true);
+        let and = new OrParameters<Validatable[]>([], true);
 
         it('true', () => {
             and.defaults = false;
@@ -116,7 +116,7 @@ describe('single', function() {
 
 describe('multi same', function() {
 
-    let and = new Or<Validatable[]>([], false);
+    let and = new OrParameters<Validatable[]>([], false);
 
     it('valids', () => {
         and.defaults = false;
@@ -148,7 +148,7 @@ describe('multi same', function() {
 
 describe('multi mixed', function() {
 
-    let and = new Or<Validatable[]>([], false);
+    let and = new OrParameters<Validatable[]>([], false);
 
     it('valids', () => {
         and.defaults = true;

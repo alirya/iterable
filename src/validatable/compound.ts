@@ -2,11 +2,15 @@ import Return from '../return/return';
 import Validatable from '@alirya/validatable/validatable';
 import IterableContainer from '../iterable/iterable';
 
+export interface CompoundType<Validatables extends Iterable<Validatable>> extends
+    Readonly<Validatable>, Iterable<Return<Validatables>>, IterableContainer<Validatables> {
+
+}
 /**
  * base for creating compound wrapper for {@template Validatables}
  */
-export default abstract class  Compound<Validatables extends Iterable<Validatable>>
-    implements Readonly<Validatable>, Iterable<Return<Validatables>>, IterableContainer<Validatables>
+export default abstract class Compound<Validatables extends Iterable<Validatable>>
+    implements CompoundType<Validatables>
 {
 
     /**
