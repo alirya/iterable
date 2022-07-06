@@ -1,6 +1,6 @@
-import {AndParameters} from '../../dist/validatable/and';
-import Guard from '@alirya/validatable/boolean/validatable';
-import Validatable from '@alirya/validatable/validatable';
+import {AndParameters} from '../../dist/validatable/and.js';
+import Guard from '@alirya/validatable/boolean/validatable.js';
+import Validatable from '@alirya/validatable/validatable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

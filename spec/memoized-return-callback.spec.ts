@@ -1,4 +1,4 @@
-import MemoizedReturnCallback from '../dist/memoized-return-callback';
+import MemoizedReturnCallback from '../dist/memoized-return-callback.js';
 
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});

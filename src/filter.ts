@@ -1,6 +1,6 @@
-import IterableContainer from './iterable/iterable';
-import Validation from '@alirya/boolean/validation/validation';
-import Value from '@alirya/value/value';
+import IterableContainer from './iterable/iterable.js';
+import Validation from '@alirya/boolean/validation/validation.js';
+import Value from '@alirya/value/value.js';
 export function * FilterParameters<Type extends any = any>(
 
     iterable: Iterable<Type>,

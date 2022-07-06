@@ -1,7 +1,7 @@
-import Compound from './compound';
-import FunctionOr from './boolean/or';
-import Validatable from '@alirya/validatable/validatable';
-import IterableContainer from '../iterable/iterable';
+import Compound from './compound.js';
+import FunctionOr from './boolean/or.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import IterableContainer from '../iterable/iterable.js';
 
 /**
  * Or operator for {@link Validatable}

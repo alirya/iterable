@@ -1,4 +1,4 @@
-import Iterable from '../../dist/boolean/iterable';
+import Iterable from '../../dist/boolean/iterable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

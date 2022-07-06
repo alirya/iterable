@@ -1,5 +1,5 @@
-import MemoizedReturnCallback from '../../dist/memoized-return-callback';
-import {LastParameters} from '../../dist/value/last';
+import MemoizedReturnCallback from '../../dist/memoized-return-callback.js';
+import {LastParameters} from '../../dist/value/last.js';
 
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});

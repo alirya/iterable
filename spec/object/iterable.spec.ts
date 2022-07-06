@@ -1,4 +1,4 @@
-import Iterable from '../../dist/object/iterable';
+import Iterable from '../../dist/object/iterable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

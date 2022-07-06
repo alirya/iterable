@@ -1,5 +1,5 @@
-import Validatable from '@alirya/validatable/validatable';
-import IterableContainer from '../../iterable/iterable';
+import Validatable from '@alirya/validatable/validatable.js';
+import IterableContainer from '../../iterable/iterable.js';
 
 export function AndParameters<
     Validatables extends Iterable<Validatable>

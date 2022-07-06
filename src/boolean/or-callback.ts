@@ -1,6 +1,6 @@
-import Callable from '@alirya/function/callable';
-import IterableContainer from '../iterable/iterable';
-import Argument from '@alirya/function/argument/argument';
+import Callable from '@alirya/function/callable.js';
+import IterableContainer from '../iterable/iterable.js';
+import Argument from '@alirya/function/argument/argument.js';
 
 
 export function OrCallbackParameters<Callback extends Callable<unknown[], boolean>>(

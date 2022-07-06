@@ -1,6 +1,6 @@
-import IterableContainer from '../iterable/iterable';
-import Value from '@alirya/value/value';
-import Validation from '@alirya/boolean/validation/validation';
+import IterableContainer from '../iterable/iterable.js';
+import Value from '@alirya/value/value.js';
+import Validation from '@alirya/boolean/validation/validation.js';
 
 export function FindParameters<
     Type extends any,
