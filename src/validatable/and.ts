@@ -1,7 +1,7 @@
-import Compound from './compound';
-import FunctionAnd from './boolean/and';
-import Validatable from '@alirya/validatable/validatable';
-import IterableContainer from '../iterable/iterable';
+import Compound from './compound.js';
+import FunctionAnd from './boolean/and.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import IterableContainer from '../iterable/iterable.js';
 
 /**
  * And operator for {@link Validatable}

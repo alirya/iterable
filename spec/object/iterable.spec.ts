@@ -1,11 +1,11 @@
-import Iterable from '../../dist/object/iterable';
+import Iterable from '../../dist/object/iterable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 describe('map', function () {
 
-    let map : Map<string, string> = new Map<string, string>();
+    const map : Map<string, string> = new Map<string, string>();
     let result : Record<string, string> = {};
 
 
@@ -35,7 +35,7 @@ describe('map', function () {
 
 describe('array', function () {
 
-    let map : [string, string][] = [];
+    const map : [string, string][] = [];
     let result : Record<string, string> = {};
 
 

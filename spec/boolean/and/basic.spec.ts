@@ -1,7 +1,7 @@
-import Iterable from '../../../dist/boolean/iterable';
-import IsBoolean from '@alirya/boolean/boolean';
-import IsFunction from '@alirya/function/boolean/function';
-import {AndCallbackParameters} from '../../../dist/boolean/and-callback';
+import Iterable from '../../../dist/boolean/iterable.js';
+import IsBoolean from '@alirya/boolean/boolean.js';
+import IsFunction from '@alirya/function/boolean/function.js';
+import {AndCallbackParameters} from '../../../dist/boolean/and-callback.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

@@ -1,6 +1,6 @@
-import Return from '../return/return';
-import Validatable from '@alirya/validatable/validatable';
-import IterableContainer from '../iterable/iterable';
+import Return from '../return/return.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import IterableContainer from '../iterable/iterable.js';
 
 export interface CompoundType<Validatables extends Iterable<Validatable>> extends
     Readonly<Validatable>, Iterable<Return<Validatables>>, IterableContainer<Validatables> {

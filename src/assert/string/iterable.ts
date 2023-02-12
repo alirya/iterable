@@ -1,13 +1,13 @@
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
 
 export function IterableParameters(
     value : unknown,
     valid : boolean,
-    subject : string = 'value'
+    subject  = 'value'
 ) : string {
 
-    let string = (<any>value).toString();
+    const string = (<any>value).toString();
 
     if(valid) {
 

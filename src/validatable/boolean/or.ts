@@ -1,11 +1,11 @@
-import Validatable from '@alirya/validatable/validatable';
-import IterableContainer from '../../iterable/iterable';
+import Validatable from '@alirya/validatable/validatable.js';
+import IterableContainer from '../../iterable/iterable.js';
 
 export function OrParameters<
     Validatables extends Iterable<Validatable>
 >(
     validatables : Validatables,
-    defaults : boolean = true
+    defaults  = true
 ) : boolean {
 
     for(const validatable of validatables) {

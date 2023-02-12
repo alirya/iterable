@@ -1,5 +1,5 @@
-import MemoizedReturnCallback from '../../dist/memoized-return-callback';
-import {LastParameters} from '../../dist/value/last';
+import MemoizedReturnCallback from '../../dist/memoized-return-callback.js';
+import {LastParameters} from '../../dist/value/last.js';
 
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
@@ -9,7 +9,7 @@ describe('subjects', function () {
     let first = 0;
     let second = 0;
 
-    let subjects = [
+    const subjects = [
         ()=>{
             first++;
             return 1;
@@ -20,7 +20,7 @@ describe('subjects', function () {
         }
     ];
 
-    let callbacks = new MemoizedReturnCallback(subjects);
+    const callbacks = new MemoizedReturnCallback(subjects);
 
     it('first call', () => {
 

@@ -1,6 +1,6 @@
-import {AndParameters} from '../../dist/validatable/and';
-import Guard from '@alirya/validatable/boolean/validatable';
-import Validatable from '@alirya/validatable/validatable';
+import {AndParameters} from '../../dist/validatable/and.js';
+import Guard from '@alirya/validatable/boolean/validatable.js';
+import Validatable from '@alirya/validatable/validatable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -9,15 +9,15 @@ describe('structure', function () {
 
     describe('subjects', function () {
 
-        let subjects = [];
-        let and = new AndParameters<Validatable[]>(subjects, true);
+        const subjects = [];
+        const and = new AndParameters<Validatable[]>(subjects, true);
 
         it('constructor', () => {
             expect(subjects === and.iterable).toBeTrue();
         });
 
         it('set', () => {
-            let subjects2 = [];
+            const subjects2 = [];
             and.iterable = subjects2;
             expect(subjects === and.iterable).toBeFalse();
             expect(subjects2 === and.iterable).toBeTrue();
@@ -27,18 +27,18 @@ describe('structure', function () {
 
     describe('initial', function () {
 
-        let initial = true;
-        let and = new AndParameters<Validatable[]>([], initial);
+        const initial = true;
+        const and = new AndParameters<Validatable[]>([], initial);
 
         it('constructor', () => {
             expect(initial === and.defaults).toBeTrue();
         });
 
         it('set', () => {
-            let initial2 = false;
+            const initial2 = false;
             and.defaults = initial2;
-            expect(initial === and.defaults).toBeFalse();
-            expect(initial2 === and.defaults).toBeTrue();
+            expect(initial as boolean === and.defaults).toBeFalse();
+            expect(initial2 as boolean === and.defaults).toBeTrue();
         });
 
     });
@@ -50,12 +50,12 @@ describe('empty', function () {
     describe('initial', function () {
 
         it('true', () => {
-            let and = new AndParameters<Validatable[]>([], true);
+            const and = new AndParameters<Validatable[]>([], true);
             expect(and.valid).toBe(true);
         });
 
         it('false', () => {
-            let and = new AndParameters<Validatable[]>([], false);
+            const and = new AndParameters<Validatable[]>([], false);
             expect(and.valid).toBe(false);
         });
 
@@ -63,7 +63,7 @@ describe('empty', function () {
 
     describe('set', function () {
 
-        let and = new AndParameters<Validatable[]>([], true);
+        const and = new AndParameters<Validatable[]>([], true);
 
         it('true', () => {
             and.defaults = true;
@@ -84,19 +84,19 @@ describe('single', function() {
     describe('constructor', function () {
 
         it('true', () => {
-            let and = new AndParameters<Validatable[]>([{valid:true}], false);
+            const and = new AndParameters<Validatable[]>([{valid:true}], false);
             expect(and.valid).toBe(true);
         });
 
         it('false', () => {
-            let and = new AndParameters<Validatable[]>([{valid:false}], true);
+            const and = new AndParameters<Validatable[]>([{valid:false}], true);
             expect(and.valid).toBe(false);
         });
     });
 
     describe('set', function () {
 
-        let and = new AndParameters<Validatable[]>([], true);
+        const and = new AndParameters<Validatable[]>([], true);
 
         it('true', () => {
             and.defaults = false;
@@ -116,7 +116,7 @@ describe('single', function() {
 
 describe('multi same', function() {
 
-    let and = new AndParameters<Validatable[]>([], false);
+    const and = new AndParameters<Validatable[]>([], false);
 
     it('valids', () => {
         and.defaults = false;
@@ -134,7 +134,7 @@ describe('multi same', function() {
 
         let number = 0;
 
-        for(let value of and) {
+        for(const value of and) {
 
             number++;
             expect(Guard(value)).toBeTrue();
@@ -148,7 +148,7 @@ describe('multi same', function() {
 
 describe('multi mixed', function() {
 
-    let and = new AndParameters<Validatable[]>([], false);
+    const and = new AndParameters<Validatable[]>([], false);
 
     it('valids', () => {
         and.defaults = true;
@@ -166,7 +166,7 @@ describe('multi mixed', function() {
 
         let number = 0;
 
-        for(let value of and) {
+        for(const value of and) {
 
             number++;
             expect(Guard(value)).toBeTrue();

@@ -1,5 +1,5 @@
-import IterableContainer from '../iterable/iterable';
-import Value from '@alirya/value/value';
+import IterableContainer from '../iterable/iterable.js';
+import Value from '@alirya/value/value.js';
 
 export function FirstParameters<
     Type extends any,

@@ -1,5 +1,5 @@
-import Assert from '../assert/iterable';
-import Throwable from '../assert/throwable/iterable';
+import Assert from '../assert/iterable.js';
+import Throwable from '../assert/throwable/iterable.js';
 
 export default function Iterable<Enumerate>(
     value : unknown,

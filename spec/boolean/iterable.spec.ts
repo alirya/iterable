@@ -1,19 +1,19 @@
-import Iterable from '../../dist/boolean/iterable';
+import Iterable from '../../dist/boolean/iterable.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let argument : unknown = [];
+    const argument : unknown = [];
 
     if(Iterable(argument)) {
 
-        let result : Iterable<any> = argument;
+        const result : Iterable<any> = argument;
 
     } else {
 
         // @ts-expect-error
-        let result : Iterable<any> = argument;
+        const result : Iterable<any> = argument;
     }
 
 });
