@@ -1,6 +1,6 @@
 {
   "name": "@axiona/iterable",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Typescript iterable",
   "publishConfig": {
     "directory": "dist"
@@ -20,10 +20,10 @@
   "dependencies": {
     "tslib": "^2.5.0",
     "ts-toolbelt": "^9.6.0",
-    "@axiona/validatable": "^0.21.1",
-    "@axiona/value": "^0.16.1",
-    "@axiona/boolean": "^0.12.1",
-    "@axiona/function": "^0.17.1"
+    "@axiona/validatable": "^0.22.0",
+    "@axiona/value": "^0.17.0",
+    "@axiona/boolean": "^0.13.0",
+    "@axiona/function": "^0.18.0"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.2",
