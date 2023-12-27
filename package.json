@@ -1,5 +1,5 @@
 {
-  "name": "@alirya/iterable",
+  "name": "@axiona/iterable",
   "version": "0.6.1",
   "description": "Typescript iterable",
   "publishConfig": {
@@ -12,18 +12,18 @@
     "cache": false
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/alirya/iterable",
+  "homepage": "https://github.com/axiona/iterable",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alirya/iterable"
+    "url": "https://github.com/axiona/iterable"
   },
   "dependencies": {
     "tslib": "^2.5.0",
     "ts-toolbelt": "^9.6.0",
-    "@alirya/validatable": "^0.21.1",
-    "@alirya/value": "^0.16.1",
-    "@alirya/boolean": "^0.12.1",
-    "@alirya/function": "^0.17.1"
+    "@axiona/validatable": "^0.21.1",
+    "@axiona/value": "^0.16.1",
+    "@axiona/boolean": "^0.12.1",
+    "@axiona/function": "^0.17.1"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.2",

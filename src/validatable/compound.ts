@@ -1,5 +1,5 @@
 import Return from '../return/return.js';
-import Validatable from '@alirya/validatable/validatable.js';
+import Validatable from '@axiona/validatable/validatable.js';
 import IterableContainer from '../iterable/iterable.js';
 
 export interface CompoundType<Validatables extends Iterable<Validatable>> extends

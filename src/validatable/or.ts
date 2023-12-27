@@ -1,6 +1,6 @@
 import Compound from './compound.js';
 import FunctionOr from './boolean/or.js';
-import Validatable from '@alirya/validatable/validatable.js';
+import Validatable from '@axiona/validatable/validatable.js';
 import IterableContainer from '../iterable/iterable.js';
 
 /**

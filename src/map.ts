@@ -1,7 +1,7 @@
 import IterableContainer from './iterable/iterable.js';
-import Callback from '@alirya/function/callback/callback.js';
-import Callable from '@alirya/function/callable.js';
-import Value from '@alirya/value/value.js';
+import Callback from '@axiona/function/callback/callback.js';
+import Callable from '@axiona/function/callable.js';
+import Value from '@axiona/value/value.js';
 
 export function * MapParameters<Type, Mapped>(
     iterable: Iterable<Type>,

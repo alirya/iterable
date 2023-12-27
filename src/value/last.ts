@@ -1,5 +1,5 @@
 import IterableContainer from '../iterable/iterable.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 
 export function LastParameters<
     Type extends any,

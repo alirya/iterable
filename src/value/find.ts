@@ -1,6 +1,6 @@
 import IterableContainer from '../iterable/iterable.js';
-import Value from '@alirya/value/value.js';
-import Validation from '@alirya/boolean/validation/validation.js';
+import Value from '@axiona/value/value.js';
+import Validation from '@axiona/boolean/validation/validation.js';
 
 export function FindParameters<
     Type extends any,
